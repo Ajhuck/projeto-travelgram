@@ -1,0 +1,37 @@
+header{
+  background-color: var(--surface-color);
+  color: var(--text-primary-color);
+  width: 100%;
+
+}
+main section{
+  background-color: var(--surface-color);
+}
+header .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#profile{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32px
+}
+#profile > div{
+  max-width: 384px;
+}
+#info{
+  width: 280px;
+}
+section div ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+header section div ul li div{
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
