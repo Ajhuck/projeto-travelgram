@@ -1,13 +1,8 @@
 footer{
   display: flex;
-  text-align: center;
-  justify-content: space-between;
-  font-size: 14px;
-  color:var(--text-secondary-color);
+  gap: 24px;
+  padding-block: 24px;
 }
-footer ul{
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  gap: 16px;
+footer span:nth-child(1){
+  margin-right: auto;
 }

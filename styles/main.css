@@ -3,16 +3,10 @@ main{
   flex-wrap: wrap;
   justify-content: center;
   gap: 24px;
+  padding-block: 24px;
 }
 main img{
   width: 286px;
   height: 286px;
   object-fit: cover;
-}
-
-main{
-  width: 100%;;
-  margin: 0 auto;
-  padding: 32px;
-  display: flex;
 }
