@@ -1,37 +1,33 @@
 header{
-  background-color: var(--surface-color);
-  color: var(--text-primary-color);
-  width: 100%;
-
+  padding-block: 32px;
+  font: var(--text-md);
+  color: var(--text-secondary-color)
 }
-main section{
-  background-color: var(--surface-color);
+#profile{
+  display: flex;
+  gap: 32px
 }
 header .container{
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-#profile{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 32px
-}
 #profile > div{
   max-width: 384px;
 }
-#info{
-  width: 280px;
+#profile h1{
+  font: var(--text-lg);
+  color: var(--text-primary-color);
+  margin-bottom: 8px;
 }
-section div ul{
+#info{
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
-header section div ul li div{
+#info li{
   display: flex;
-  flex-direction: row;
+  align-items: center;
   gap: 8px;
 }
