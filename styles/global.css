@@ -4,9 +4,6 @@
   box-sizing: border-box;
 }
 :root {
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-  line-height: 150%;
   --brand-color: #EF5F4C;
   --surface-color: #F5F5F5;
   --skeleton-color: #D9D9D9;
@@ -16,16 +13,51 @@
   --text-secondary-color: #6C6C6C;
 
   --font-family: 'Poppins', sans-serif;
-  --text-lg: bold 32px/125% var(--font-family);
-  --text: 16px/1.5 var(--font-family);
-  --text-md:14px/170% var(--font-family);
-  --text-sm:12px/170% var(--font-family);
+
+  --fw-base: 400;
+  --fw-bold: 700;
+  
+  --fs-sm: 12px;
+  --fs-md: 14px;
+  --fs-base: 16px;
+  --fs-lg: 24px;
+
+  --px-base: 16px;
+  --px-lg: 32px;
+  --py-base: 16px;
+  --py-lg: 32px;
+}
+html{
+  font-family:var(--font-family);
+  color: var(--text-color-primary);
+
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 body{
   font-size: var(--text);
   background-color: var(--background-color);
   color: var(--text-secondary-color);
 }
+.fs-lg{
+  font-size: var(--fs-lg);
+}
+h1{
+  color: var(--text-color-primary);
+  font: var(--fw-bold) var(--fs-lg)/125% var(--font-family);
+}
+
+@media (width>= 60em) {
+  :root{
+    --fs-lg: 32px;
+
+    --px-base: 32px;
+    --px-lg: 32px;
+    --py-base: 20px;
+    --py-lg: 32px;
+  }
+}
+
 
 a{
   text-decoration: none;
@@ -34,13 +66,4 @@ a{
 a:hover{
   color: var(--brand-color);
   text-decoration: underline;
-}
-
-.container{
-  padding-inline: 32px;
-  max-width: 1280px;
-  margin-inline: auto;
-}
-.bg-surface-color{
-  background-color: var(--surface-color);
 }

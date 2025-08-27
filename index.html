@@ -8,9 +8,10 @@
   <title>Travelgram</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/index.css">
+  <link rel="shortcut icon" href="fav-icon.svg" type="image/x-icon">
 </head>
 <body>
-  <div class="bg-surface-color">
+  <div id= "menu" class="bg-surface-color">
     <nav class="container">
       <a href="#" id="logo">
         <img src="assets/Logo.svg" alt="Travelgram Logo">
@@ -21,8 +22,8 @@
               <img src="assets/MagnifyingGlass.svg" alt="Magnifying Glass Icon">
             </a>
         </li>
-        <li><a href="#">Explorar</a></li>
-        <li><a href="#">Minhas viagens</a></li>
+        <li class="desktop-only"><a href="#">Explorar</a></li>
+        <li class="desktop-only"><a href="#">Minhas viagens</a></li>
         <li>
           <a href="#">
             <img src="assets/Profile pic.png" alt="Foto de Perfil">
@@ -31,11 +32,11 @@
       </ul>
     </nav>
     <header>
-      <div class="container">
-        <div id="profile">
+      <div class="container flex wrap gap-32 px-lg">
+        <div class="flex wrap" id="profile">
           <img src="assets/Profile pic.png" alt="Foto de Perfil">
           <div id="about">
-            <h1>Isabela Torres</h1>
+            <h1 class="fs-lg">Isabela Torres</h1>
             <p>Amante de viagens, cultura e gastronomia. 🌍✈️ <br> Aqui compartilho as histórias registradas em cada clique, explorando cantinhos fascinantes do nosso planeta a partir da movimentada cidade de São Paulo. 🏙️📸</p>
           </div>
         </div>
@@ -55,8 +56,8 @@
         </ul>
       </div>
     </header>
-    </div>
-    <main class="container">
+  </div>
+  <main class="container px-base">
       <img src="assets/Image 01.png" alt="...">
       <img src="assets/Image 02.png" alt="...">
       <img src="assets/Image 03.png" alt="...">
@@ -69,11 +70,17 @@
       <img src="assets/Image 10.png" alt="...">
       <img src="assets/Image 11.png" alt="...">
       <img src="assets/Image 12.png" alt="...">
-    </main>
+  </main>
 </body>
-<footer class="container">
-  <span>© Travelgram 2025</span>
-  <span>Termos de uso</span>
-  <span>Política de privacidade</span>
+<footer class="container wrap px-base justify-center">
+  
+    <span class="align-center">
+      <p>© Travelgram 2025</p>
+    </span>
+  
+  <div class="flex gap-16">
+    <span>Termos de uso</span>
+    <span>Política de privacidade</span>
+  </div>
 </footer>
 </html>
